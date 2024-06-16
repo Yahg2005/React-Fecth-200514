@@ -10,3 +10,80 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+html, body {
+    height: 80%;
+}
+
+body {
+    background: #c7c9c96b;
+    font-family:  'sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130%;
+    margin: 0;
+}
+
+.container {
+    background: rgba(157, 216, 176, 0.068);
+    border-radius: 5px;
+    box-shadow: 0 5px 7px rgba(0, 0, 02, 0.5);
+    width: 600px;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff8c00;
+    font-size: 8em;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+li input {
+    border: none;
+    width: calc(100% - 30px);
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+li input:focus {
+    outline: none;
+}
+
+.todo-item {
+    position: relative;
+}
+
+.todo-item span {
+    color: red;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.todo-item:hover span {
+    visibility: visible;
+}
+
+div {
+    text-align: center;
+    color: gray;
+    margin-top: 20px;
+}
+
